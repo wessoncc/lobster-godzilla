@@ -7623,8 +7623,8 @@ h6 {
     padding-bottom: 100px;
     text-align: center;
     color: #000000;
-    background: url("../Pages/Images/climate-1.jpg") no-repeat top center;
-    background-image: linear-gradient(url("../Pages/Images/climate-1.jpg") no-repeat top center, rgb(255, 255, 255));
+    background: url("../Images/climate-1.jpg") no-repeat top center;
+    background-image: linear-gradient(url("../Images/climate-1.jpg") no-repeat top center, rgb(255, 255, 255));
     background-size: 100%;
     background-color: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))
 }
