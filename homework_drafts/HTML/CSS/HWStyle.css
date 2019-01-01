@@ -2291,7 +2291,7 @@ pre code {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 99px) {
     .col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12 {
         float:left
     }
@@ -4565,7 +4565,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
     max-height: 340px
 }
 
-@media (max-device-width: 480px) and (orientation:landscape) {
+@media (max-device-width: 360px) and (orientation:landscape) {
     .navbar-fixed-top .navbar-collapse,.navbar-fixed-bottom .navbar-collapse {
         max-height:200px
     }
@@ -5360,7 +5360,7 @@ a.badge:hover,a.badge:focus {
     padding-bottom: 30px;
     margin-bottom: 30px;
     color: inherit;
-    background-color: #fafafa
+    background-color: #c0c0c0
 }
 
 .jumbotron h1,.jumbotron .h1 {
@@ -7619,12 +7619,13 @@ h6 {
 }
 
 .intro-header {
+    margin-bottom: 10px;
     padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 100px;
     text-align: center;
     color: #000000;
-    background: url("../Images/climate-1.jpg") no-repeat top center;
-    background-image: linear-gradient(url("../Images/climate-1.jpg") no-repeat top center, rgb(255, 255, 255));
+    /*background: url("../Images/climate-1.jpg") no-repeat top center;
+    background-image: linear-gradient(url("../Images/climate-1.jpg") no-repeat top center, rgb(255, 255, 255));*/
     background-size: 100%;
     background-color: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))
 }
