@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
@@ -238,7 +238,7 @@ td,th {
     }
 
     img {
-        max-width: 100% !important
+        max-width: auto !important
     }
 
     p,h2,h3 {
@@ -1363,7 +1363,7 @@ body {
     font-size: 15px;
     line-height: 1.4;
     color: #222222;
-    background-color: #ffffff
+    background-color: #acacac
 }
 
 input,button,select,textarea {
@@ -1392,7 +1392,10 @@ figure {
 }
 
 img {
-    vertical-align: middle
+    /* vertical-align: middle; */
+    display: block;
+    max-width: 100%;
+    height: auto
 }
 
 .img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img {
@@ -1836,7 +1839,7 @@ pre code {
     padding-right: 15px
 }
 
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
     .container {
         width:750px
     }
@@ -1852,7 +1855,7 @@ pre code {
     .container {
         width:1170px
     }
-}*/
+}
 
 .container-fluid {
     margin-right: auto;
@@ -2081,7 +2084,7 @@ pre code {
     margin-left: 0%
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12 {
         float:left
     }
@@ -2291,7 +2294,7 @@ pre code {
     }
 }
 
-@media (min-width: 99px) {
+@media (min-width: 992px) {
     .col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12 {
         float:left
     }
@@ -2719,7 +2722,7 @@ caption {
     padding-top: 8px;
     padding-bottom: 8px;
     color: #999999;
-    text-align: left
+    text-align: center
 }
 
 th {
@@ -5427,7 +5430,8 @@ a.thumbnail:hover,a.thumbnail:focus,a.thumbnail.active {
 
 .thumbnail .caption {
     padding: 9px;
-    color: #222222
+    color: #222222;
+    text-align: center
 }
 
 .alert {
@@ -7620,8 +7624,8 @@ h6 {
 
 .intro-header {
     margin-bottom: 10px;
-    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 100px;
+    padding-top: 20px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 20px;
     text-align: center;
     color: #000000;
     /*background: url("../Images/climate-1.jpg") no-repeat top center;
@@ -7660,13 +7664,13 @@ h6 {
     font-size: 200%;
 }
 
-@media(max-width:767px) {
+/* @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
     }
 
     
-}
+} */
 
 .network-name {
     text-transform: uppercase;
