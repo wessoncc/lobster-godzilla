@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
@@ -238,7 +238,7 @@ td,th {
     }
 
     img {
-        max-width: 100% !important
+        max-width: auto !important
     }
 
     p,h2,h3 {
@@ -1363,7 +1363,7 @@ body {
     font-size: 15px;
     line-height: 1.4;
     color: #222222;
-    background-color: #ffffff
+    background-color: #acacac
 }
 
 input,button,select,textarea {
@@ -1392,7 +1392,10 @@ figure {
 }
 
 img {
-    vertical-align: middle
+    /* vertical-align: middle; */
+    display: block;
+    max-width: 100%;
+    height: auto
 }
 
 .img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img {
@@ -1836,7 +1839,7 @@ pre code {
     padding-right: 15px
 }
 
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
     .container {
         width:750px
     }
@@ -1852,7 +1855,7 @@ pre code {
     .container {
         width:1170px
     }
-}*/
+}
 
 .container-fluid {
     margin-right: auto;
@@ -2081,7 +2084,7 @@ pre code {
     margin-left: 0%
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12 {
         float:left
     }
@@ -2719,7 +2722,7 @@ caption {
     padding-top: 8px;
     padding-bottom: 8px;
     color: #999999;
-    text-align: left
+    text-align: center
 }
 
 th {
@@ -4565,7 +4568,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
     max-height: 340px
 }
 
-@media (max-device-width: 480px) and (orientation:landscape) {
+@media (max-device-width: 360px) and (orientation:landscape) {
     .navbar-fixed-top .navbar-collapse,.navbar-fixed-bottom .navbar-collapse {
         max-height:200px
     }
@@ -5360,7 +5363,7 @@ a.badge:hover,a.badge:focus {
     padding-bottom: 30px;
     margin-bottom: 30px;
     color: inherit;
-    background-color: #fafafa
+    background-color: #c0c0c0
 }
 
 .jumbotron h1,.jumbotron .h1 {
@@ -5427,7 +5430,8 @@ a.thumbnail:hover,a.thumbnail:focus,a.thumbnail.active {
 
 .thumbnail .caption {
     padding: 9px;
-    color: #222222
+    color: #222222;
+    text-align: center
 }
 
 .alert {
@@ -7619,12 +7623,13 @@ h6 {
 }
 
 .intro-header {
-    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 100px;
+    margin-bottom: 10px;
+    padding-top: 20px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 20px;
     text-align: center;
     color: #000000;
-    background: url("../Pages/Images/climate-1.jpg") no-repeat top center;
-    background-image: linear-gradient(url("../Pages/Images/climate-1.jpg") no-repeat top center, rgb(255, 255, 255));
+    /*background: url("../Images/climate-1.jpg") no-repeat top center;
+    background-image: linear-gradient(url("../Images/climate-1.jpg") no-repeat top center, rgb(255, 255, 255));*/
     background-size: 100%;
     background-color: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))
 }
@@ -7659,13 +7664,13 @@ h6 {
     font-size: 200%;
 }
 
-@media(max-width:767px) {
+/* @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
     }
 
     
-}
+} */
 
 .network-name {
     text-transform: uppercase;
